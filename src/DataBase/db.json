@@ -135,15 +135,5 @@
             "image": "./image_product.png",
             "category": "best_sellers"
         }
-    ],
-    "slider": [
-        {
-            "id": 1,
-            "url": "./Slider_Images/Frame_2785.png"
-        },
-        {
-            "id": 2,
-            "url": "./Slider_Images/Frame_2786.png"
-        }
     ]
 }

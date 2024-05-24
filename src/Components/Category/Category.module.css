@@ -76,4 +76,35 @@
     bottom: 52px;
     left: 49px;
     right: 459px;
+    position: relative;
+}
+
+.btn {
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+    outline: none;
+    position: absolute;
+    top: 244.1px;
+    left: 767.58px;
+    cursor: pointer;
+}
+.btn2 {
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+    outline: none;
+    position: absolute;
+    top: 244.1px;
+    right: 767.58px;
+    cursor: pointer;
+}
+
+.btn2 > svg > rect,
+.btn > svg > rect {
+    transition: all ease-in 150ms;
+}
+.btn2:hover > svg > rect,
+.btn:hover > svg > rect {
+    fill: var(--primaryGreen);
 }
