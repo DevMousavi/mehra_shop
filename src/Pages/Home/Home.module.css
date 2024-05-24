@@ -8,3 +8,37 @@
     background-color: var(--primaryGrayLight);
     padding: 40px 54.5px;
 }
+
+.container_btn_more {
+    width: 161px;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 16px 24px;
+    border-radius: 12px;
+    border: 1px dashed var(--primaryGreen);
+}
+
+.container_btn_more > p {
+    width: 83px;
+    height: 24px;
+    color: var(--primaryGreen);
+    font-weight: 300;
+    line-height: 24px;
+    text-align: right;
+    text-wrap: nowrap;
+}
+
+.container_btn_more > img {
+    width: 24px;
+    height: 24px;
+}
+
+.container_main > div:first-child {
+    width: 100%;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
