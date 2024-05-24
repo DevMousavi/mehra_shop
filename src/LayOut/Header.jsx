@@ -2,6 +2,7 @@ import React from "react";
 import style from "./Header.module.css";
 import { Link, NavLink } from "react-router-dom";
 
+// "React-Router-dom" library is used for "single page app".
 const Header = () => {
     return (
         <header>
