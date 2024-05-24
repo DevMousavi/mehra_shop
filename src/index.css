@@ -1,12 +1,30 @@
 @import url("./Constant.css");
 
 @font-face {
-    font-family: "IranianSans";
-    src: url("./../public/Fonts/IranianSans.woff") format("woff"),
-        local("IRANSansX-Regular"), local("iranSansX-Regular"),
-        local("IranSansX-Regular"), local("IRANSANSX"), local("iransansx"),
-        local("IranSansX-regular");
-    font-weight: normal;
+    font-family: "IRANSans_FaNum";
+    src: url("./Fonts/IRANSans_FaNum_Light.woff2") format("woff2");
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "IRANSans_FaNum";
+    src: url("./Fonts/IRANSans_FaNum.woff2") format("woff2");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "IRANSans_FaNum";
+    src: url("./Fonts/IRANSans_FaNum_Medium.woff2") format("woff2");
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "IRANSans_FaNum";
+    src: url("./Fonts/IRANSans_FaNum_Bold.woff2") format("woff2");
+    font-weight: 700;
     font-style: normal;
 }
 
@@ -17,9 +35,10 @@
 }
 
 body {
-    font-family: "IranianSans";
+    font-family: "IRANSans_FaNum";
     background-color: var(--primaryWhite);
     font-size: 16px;
+    font-weight: 400;
 }
 
 a {
@@ -31,5 +50,5 @@ li {
 
 .active {
     color: var(--primaryGreen) !important;
-    font-weight: bold;
+    font-weight: 700;
 }

@@ -1,0 +1,10 @@
+@import url("./../../Constant.css");
+
+.container_main {
+    width: 1314px;
+    height: 1487px;
+    margin: 183px auto 0px auto;
+    border-radius: 20px;
+    background-color: var(--primaryGrayLight);
+    padding: 40px 54.5px;
+}

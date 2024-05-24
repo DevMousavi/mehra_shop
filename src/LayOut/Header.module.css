@@ -43,7 +43,7 @@ header {
 .container_li > li > a {
     font-size: 14px;
     line-height: 21.91px;
-    color: var(--primaryGrayLight);
+    color: var(--primaryGrayMedium);
 }
 
 .logo {
