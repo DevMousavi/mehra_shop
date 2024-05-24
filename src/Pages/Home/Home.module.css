@@ -3,7 +3,7 @@
 .container_main {
     width: 1314px;
     height: 1487px;
-    margin: 183px auto 0px auto;
+    margin: 110px auto 0px auto;
     border-radius: 20px;
     background-color: var(--primaryGrayLight);
     padding: 40px 54.5px;
@@ -45,5 +45,11 @@
 
 .container_cards {
     width: 100%;
-    margin-top: 128px;
+    margin-top: 64px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    row-gap: 44px;
 }

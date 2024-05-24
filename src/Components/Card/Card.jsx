@@ -3,7 +3,12 @@ import React, { useState } from "react";
 import style from "./Card.module.css";
 import { Link } from "react-router-dom";
 
-const Card = () => {
+// The "separate Number" function is written to separate three digits of the price and is used here
+import { separateNumber } from "../../Helper/separateNumber.js";
+
+// props that come from "db.json" to display in "Card"
+// The props are imported in the "Home.jsx" file
+const Card = ({ title, score, initial_price, final_price, image }) => {
     const [isDone, setIsDone] = useState(false);
     const [number, setNumber] = useState(0);
 
@@ -32,10 +37,7 @@ const Card = () => {
         <>
             <Link className={style.containerCard}>
                 <div>
-                    <img
-                        src="./public/image_product.png"
-                        alt="image_product.png"
-                    />
+                    <img src={image} alt="image_product.png" />
 
                     <span>
                         <img src="./Icons/Frame.svg" alt="Frame.svg" />
@@ -43,12 +45,10 @@ const Card = () => {
                         <img src="./Icons/Frame.svg" alt="Frame.svg" />
                     </span>
                 </div>
-                <h2 className={style.titleProducts}>
-                    عنوان محصول عنوان محصول عنوان محصول عنوان محصول
-                </h2>
+                <h2 className={style.titleProducts}>{title} </h2>
                 <div className={style.rating_and_seller_container}>
                     <span>
-                        <p>4.6</p>
+                        <p>{score}</p>
                         <img src="./public/Icons/Star.svg" alt="Star.svg" />
                     </span>
                     <span>
@@ -59,11 +59,11 @@ const Card = () => {
                 <div className={style.container_price_increase}>
                     <span>
                         <p>
-                            <del>460,000</del>
+                            <del>{separateNumber(initial_price)}</del>
                         </p>
                         <span className={style.final_price}>
                             <p>تومان</p>
-                            <p>460.000</p>
+                            <p>{separateNumber(final_price)}</p>
                         </span>
                     </span>
                     <button
