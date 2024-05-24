@@ -10,6 +10,7 @@ const Category = () => {
         "./Slider_Images/Frame_2786.png",
     ];
 
+    // Changing the "index" value to change the "URLs" inside the "sliderImage"
     const sliderHandler = () => {
         if (number === 0) {
             setNumber(1);

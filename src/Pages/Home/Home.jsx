@@ -14,7 +14,7 @@ const Home = () => {
     return (
         <>
             <Header />
-            <main className={style.container_main}>
+            {/* <main className={style.container_main}>
                 <div>
                     <FilterBox />
                     <Link to="/" className={style.container_btn_more}>
@@ -36,7 +36,7 @@ const Home = () => {
                     ))}
                 </div>
             </main>
-            <Category />
+            <Category /> */}
         </>
     );
 };
