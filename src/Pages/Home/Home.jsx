@@ -8,7 +8,7 @@ import data from "./../../DataBase/db.json";
 
 import style from "./Home.module.css";
 import Card from "../../Components/Card/Card.jsx";
-import Category from "../../Components/Category.jsx";
+import Category from "../../Components/Category/Category.jsx";
 
 const Home = () => {
     return (
@@ -35,8 +35,8 @@ const Home = () => {
                         />
                     ))}
                 </div>
-                <Category />
             </main>
+            <Category />
         </>
     );
 };
