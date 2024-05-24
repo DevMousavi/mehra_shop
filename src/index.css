@@ -39,6 +39,7 @@ body {
     background-color: var(--primaryWhite);
     font-size: 16px;
     font-weight: 400;
+    cursor: default;
 }
 
 a {

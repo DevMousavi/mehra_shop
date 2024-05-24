@@ -5,6 +5,7 @@ import Header from "../../LayOut/Header.jsx";
 import FilterBox from "../../Components/FilterBox/FilterBox.jsx";
 
 import style from "./Home.module.css";
+import Card from "../../Components/Card/Card.jsx";
 
 const Home = () => {
     return (
@@ -17,6 +18,10 @@ const Home = () => {
                         <p>مشاهده همه</p>
                         <img src="./Icons/arrow-down.svg" alt="arrow.svg" />
                     </Link>
+                </div>
+
+                <div className={style.container_cards}>
+                    <Card />
                 </div>
             </main>
         </>
