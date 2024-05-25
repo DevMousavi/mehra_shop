@@ -1,0 +1,49 @@
+@import url("./../../Constant.css");
+
+@media screen and (min-width: 393px) {
+    .container {
+        width: 393px;
+        height: 80px;
+        display: flex;
+        align-items: center;
+        background-color: #ebebeb;
+        padding: 6px 14px 10px 14px;
+        border-radius: 12px 12px 0px 0px;
+        z-index: 50;
+        position: fixed;
+        bottom: 0px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .container > ul {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .container > ul > li > a {
+        display: flex;
+        flex-direction: column-reverse;
+        width: 69px;
+        height: 59px;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .container > ul > li > a > p {
+        font-size: 12px;
+        font-weight: 300;
+        line-height: 18.78px;
+        text-align: left;
+        color: var(--primaryGrayMedium);
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .container {
+        display: none;
+    }
+}

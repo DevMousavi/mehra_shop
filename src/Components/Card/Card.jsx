@@ -131,6 +131,21 @@ const Card = ({ title, score, initial_price, final_price, image }) => {
                         </svg>
                     </button>
                 </div>
+                <div className={style.priceMobile}>
+                    <span>
+                        <p>
+                            <del>{separateNumber(initial_price)}</del>
+                        </p>
+                        <span>
+                            <p>{score}</p>
+                            <img src="./public/Icons/Star.svg" alt="Star.svg" />
+                        </span>
+                    </span>
+                    <span>
+                        <p>تومان</p>
+                        <p>{separateNumber(final_price)}</p>
+                    </span>
+                </div>
             </Link>
         </>
     );
